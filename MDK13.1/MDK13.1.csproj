@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>MDK13._1</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\clear.ico" />
+    <None Remove="img\Default Icon.ico" />
+    <None Remove="img\Desktop.ico" />
+    <None Remove="img\folderblueopen_93431.ico" />
+    <None Remove="img\saveall_1204.ico" />
+    <None Remove="img\TMP.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\Desktop.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\libmas\libmas.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\clear.ico" />
+    <Resource Include="img\Default Icon.ico" />
+    <Resource Include="img\folderblueopen_93431.ico" />
+    <Resource Include="img\saveall_1204.ico" />
+    <Resource Include="img\TMP.ico" />
+  </ItemGroup>
+
+</Project>
