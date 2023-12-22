@@ -32,8 +32,11 @@ namespace MDK13._1
                 WindowManager.Columns = Convert.ToInt32(tbColumns.Text);
                 WindowManager.Rows = Convert.ToInt32(tbRows.Text);
 
-                StreamWriter file = new("Files/config.ini");
-                
+                if (!File.Exists("config.ini"))
+                    File.Create("config.ini").Close();
+
+                StreamWriter file = new("config.ini");
+
                 file.WriteLine(tbRows.Text);
                 file.WriteLine(tbColumns.Text);
                 

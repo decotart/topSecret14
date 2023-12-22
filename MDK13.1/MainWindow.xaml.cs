@@ -32,7 +32,7 @@ namespace MDK13._1
         int[,] matrix;
         private void About(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Разработчик: Агальцов Даниил Практическая работа №13 Дана целочисленная матрица размера M * N. Найти номер первого из ее столбцов,\r\nсодержащих только нечетные числа. Если таких столбцов нет, то вывести 0");
+            MessageBox.Show("Разработчик: Агальцов Даниил");
         }
         private void Clear(object sender, RoutedEventArgs e)
         {
@@ -108,7 +108,7 @@ namespace MDK13._1
 
             try
             {
-                StreamReader file = new("Files/config.ini");
+                StreamReader file = new("config.ini");
 
                 int i = Convert.ToInt32(file.ReadLine()),
                     j = Convert.ToInt32(file.ReadLine());
